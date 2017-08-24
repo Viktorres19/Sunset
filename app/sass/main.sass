@@ -1,0 +1,401 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+  vertical-align: baseline
+  background: transparent
+  font-size: 100%
+
+a
+  margin: 0
+  padding: 0
+  font-size: 100%
+  vertical-align: baseline
+  background: transparent
+  outline: none
+  text-decoration: none
+  color: #767676
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+td, td img
+  vertical-align: top
+
+nav ul
+  list-style: none
+
+img
+  max-width: 100%
+
+html
+  min-height: 100%
+
+h1, h2, h3, h4, h5, h6
+  font-weight: normal
+
+.clr
+  clear: both
+
+.clearfix:after
+  clear: both
+  content: ""
+  display: table
+  /* --------------- end reset.css --------------- */
+/* --------------- style for main --------------- */
+body
+  font-family: 'Roboto', sans-serif
+  color: #000
+  font-size: 14px
+  background: #fff
+
+.container
+  max-width: 1150px
+  margin: 0 auto
+  padding: 0 5px
+  -webkit-box-sizing: border-box
+          box-sizing: border-box  
+
+h1 
+  color: #fff
+  font-size: 40px
+
+h2 
+  text-align: center
+  font-size: 32px
+
+h3 
+  font-size: 23px
+  margin-bottom: 9px
+
+h4 
+  font-size: 15px
+  font-weight: bold
+  margin-bottom: 5px
+
+h5
+  font-size: 21px
+  margin-bottom: 13px
+
+h6 
+  font-family: 'Encode Sans', sans-serif  
+  color: #fff
+  font-size: 30px
+
+// background-video
+
+.homepage-hero-module 
+  border-right: none
+  border-left: none
+  position: relative
+
+.no-video .video-container video,
+.touch .video-container video 
+  display: none
+
+.no-video .video-container .poster,
+.touch .video-container .poster 
+  display: block !important
+
+.video-container 
+  position: relative
+  bottom: 0%
+  left: 0%
+  height: 100%
+  width: 100%
+  overflow: hidden
+  background: #000
+
+.video-container .poster img 
+  width: 100%
+  bottom: 0
+  position: absolute
+
+.video-container .filter 
+  z-index: 100
+  position: absolute
+  background: rgba(0, 0, 0, 0.4)
+  background: none
+  width: 100%
+
+.video-container video 
+  position: absolute
+  z-index: 0
+  bottom: 0
+
+.video-container video.fillWidth 
+  width: 100%;
+
+//header
+
+header .container .header-content .header-top 
+  padding: 30px 0 28px 0
+  display: flex
+  align-items: center
+  flex-direction: row
+  justify-content: space-between
+  border-bottom: 1px solid rgba(255, 255, 255, .2)
+
+  .logo
+    margin-top: -8px
+
+    a
+      font-family: 'Encode Sans', sans-serif  
+      color: #fff
+      font-size: 30px
+      text-decoration: none  
+
+  nav
+    margin-left: 0%
+    width: 60%
+    margin-right: -35%
+
+    ul li
+      float: left
+      margin-right: 5%
+
+      a
+        color: #fff   
+
+      a:hover
+        color: #aa8c67
+
+  .hb.subscribebutton
+    margin: 0px
+    padding: 18px 29px
+    font-size: 14px
+//header-bottom
+.header-bottom
+  display: flex
+  align-items: center
+  flex-direction: column
+  justify-content: space-between
+
+  h1
+    margin-top: 100px
+
+  p
+    margin-top: 25px
+    color: #fff
+    font-size: 17px
+    text-align: center
+
+  form
+    margin-top: 60px
+
+    .subscribemail 
+      width: 437px
+      height: 55px
+      padding: 0 0 0 40px
+      -webkit-box-sizing: border-box
+      box-sizing: border-box
+      color: #a5a5a5
+      font-size: 15px
+      float: left
+      border-radius: 10px 0px 0px 10px
+      border: none
+      background: url(../images/map_marker.png) 3% 48% no-repeat, #fff
+
+    .quote.subscribebutton
+      height: 55px
+      float: left
+      padding: 19px 60px
+      color: #fff
+      background: #aa8c67
+      display: block
+      border: none
+      cursor: pointer
+      margin: 0px
+      border-radius: 0px 10px 10px 0px
+
+  .top-button
+    margin-top: 80px
+
+    a
+      display: block
+
+      i
+        color: #fff
+        font-size: 20px    
+
+    a:hover i
+      color: #aa8c67  
+
+/* advantages */
+.advantages
+  margin-top: 74px
+  padding-bottom: 96px
+  background: #fff
+
+  .container
+
+    .block
+      margin-top: 122px
+      display: flex
+      justify-content: space-between
+      align-items: flex-start  
+
+      article
+        text-align: center
+        margin-left: 7%    
+
+        img
+          max-width: 60px
+          margin-bottom: 57px
+
+        p
+          color: #888
+          font-size: 15px
+ 
+/* plan */
+.plan
+  padding: 65px 0 96px 0
+  background: #f5f5f5
+
+  .container
+
+    .block
+      margin-top: 56px
+
+      article
+        text-align: center
+        float: left
+        width: 31.65%
+        background: #fff
+        border-radius: 7px
+        margin-right: 2.5%
+        padding: 47px 0 38px 0
+
+        img
+          max-width: 70px
+          margin-bottom: 20px
+
+        p
+          color: #888
+          font-size: 15px
+          line-height: 1.3  
+
+      article:last-child
+        margin-right: 0%
+
+.subscribebutton
+  margin: 64px auto 0
+  padding: 21px 67px
+  border-radius: 7px
+  color: #fff
+  background: #7dac3f
+  display: block
+  border: none 
+  font-size: 15px
+  cursor: pointer      
+
+/*reviews*/
+
+
+.reviews
+  padding-top: 50px
+
+  .container
+
+    .multiple-slide
+      margin-top: 70px
+
+      article p
+        font-size: 16px
+        color: #858585
+        line-height: 1.5
+        margin-right: 47px      
+
+      article ul
+        margin-bottom: 21px
+
+        li
+          float: left
+          list-style-type: none
+          margin-right: 4px       
+
+.multiple-slide .slick-dots
+  bottom: -76px
+
+  .slick-dots li button:before
+      font-size: 40px
+
+/*articles*/
+
+.articles
+  background: #f5f5f5
+  margin-top: 106px
+  padding: 71px 0px 107px 0px
+
+  .container
+
+    .block
+      margin-top: 53px
+
+      article
+        float: left
+        width: 31.65%
+        margin-right: 2.5%
+        color: #000
+
+        img
+          border-radius: 7px
+          margin-bottom: 12px
+
+        p
+          font-size: 16px
+          line-height: 1.5
+
+          span
+            color: #a9a9a9
+            font-size: 13px
+
+      article:last-child
+        margin-right: 0%
+
+/*styles for footer*/
+footer
+  background: #323232
+  padding: 45px 0 49px 0  
+
+  .container
+
+    .left
+      width: 25.7%
+      float: left
+
+      p
+        font-family: 'Encode Sans', sans-serif
+        margin-top: 16px
+        color: #5b5b5b
+        font-size: 13px
+
+    .right
+      width: 74.3%
+      float: right
+
+      article
+        float: left
+
+        a
+          color: #f5f5f5
+          line-height: 2.3
+          font-size: 15px
+
+        a:hover
+          color: #c9a375
+
+      article.support
+        width: 34.7%
+
+      article.about
+        width: 34.7%
+
+      article.socials
+        width: 30.6%
+
+
+    
