@@ -1,4 +1,4 @@
-Test project for BIGDROP company.
+Test project for Nix Solutions company.
 
 To run the project following steps should be done:
 1. after unpacking or clonning repository, inside project folder run the command 'npm install'
