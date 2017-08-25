@@ -239,26 +239,15 @@ header .container .header-content .header-top {
   padding-bottom: 96px;
   background: #fff; }
   .advantages .container .block {
-    margin-top: 122px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
+    margin-top: 122px; }
     .advantages .container .block article {
       text-align: center;
-      margin-left: 7%; }
+      float: left;
+      width: 33.33%; }
       .advantages .container .block article img {
         max-width: 60px;
         margin-bottom: 57px; }
-      .advantages .container .block article p {
+      .advantages .container .block article .right p {
         color: #888;
         font-size: 15px; }
 
@@ -280,7 +269,7 @@ header .container .header-content .header-top {
       .plan .container .block article img {
         max-width: 70px;
         margin-bottom: 20px; }
-      .plan .container .block article p {
+      .plan .container .block article .right p {
         color: #888;
         font-size: 15px;
         line-height: 1.3; }
