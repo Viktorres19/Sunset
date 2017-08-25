@@ -84,8 +84,30 @@ responsive: [
         slidesToShow: 2,
         slidesToScroll: 2,
         infinite: true
-      }
-    }
+      }         
+    },
+    {
+      breakpoint: 451,
+//сообщает, при какой ширине экрана нужно включать настройки
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true
+      }         
+    }       
 ]
+});
+});
+
+$(document).ready(function(){
+//slider
+$('.slick-slider1').slick({
+  autoplay: true,  
+  infinite: true,
+  dots: true,
+  slidesToShow: 1,
+  //количество слайдов, которые выводятся на экране
+  slidesToScroll: 1
+  //количество слайдов, которые перелистываются за один раз
 });
 });

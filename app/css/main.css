@@ -63,6 +63,9 @@ body {
 h1 {
   color: #fff;
   font-size: 40px; }
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 23px; } }
 
 h2 {
   text-align: center;
@@ -70,6 +73,9 @@ h2 {
   @media (max-width: 770px) {
     h2 {
       font-size: 28px; } }
+  @media (max-width: 770px) and (max-width: 450px) {
+    h2 {
+      font-size: 20px; } }
 
 h3 {
   font-size: 23px;
@@ -147,6 +153,12 @@ header .container .header-content .header-top {
   @media (max-width: 900px) {
     header .container .header-content .header-top {
       padding-left: 60px; } }
+  @media (max-width: 900px) and (max-width: 550px) {
+    header .container .header-content .header-top {
+      padding: 15px 0 15px 60px; } }
+  @media (max-width: 900px) and (max-width: 550px) and (max-width: 500px) {
+    header .container .header-content .header-top {
+      padding: 15px 0 15px 170px; } }
   header .container .header-content .header-top .header-top-left {
     float: left;
     display: none; }
@@ -236,6 +248,9 @@ header .container .header-content .header-top {
       @media (max-width: 1000px) {
         header .container .header-content .header-top .header-top-right .hb.subscribebutton {
           margin-right: 70px; } }
+  @media (max-width: 1000px) and (max-width: 500px) {
+    header .container .header-content .header-top .header-top-right .hb.subscribebutton {
+      display: none; } }
 
 .header-bottom {
   display: -webkit-box;
@@ -260,6 +275,9 @@ header .container .header-content .header-top {
     @media (max-width: 1300px) {
       .header-bottom h1 {
         margin-top: 90px; } }
+  @media (max-width: 1300px) and (max-width: 500px) {
+    .header-bottom h1 {
+      margin-top: 45px; } }
   .header-bottom p {
     margin-top: 25px;
     color: #fff;
@@ -268,9 +286,16 @@ header .container .header-content .header-top {
     @media (max-width: 770px) {
       .header-bottom p {
         margin-top: 20px; } }
-  .header-bottom form {
+  @media (max-width: 770px) and (max-width: 500px) {
+    .header-bottom p {
+      margin-top: 11px;
+      font-size: 13px; } }
+  .header-bottom form.first {
     margin-top: 60px; }
-    .header-bottom form .subscribemail {
+    @media (max-width: 500px) {
+      .header-bottom form.first {
+        display: none; } }
+    .header-bottom form.first .subscribemail {
       width: 437px;
       height: 55px;
       padding: 0 0 0 40px;
@@ -283,10 +308,54 @@ header .container .header-content .header-top {
               border-radius: 7px 0px 0px 7px;
       border: none;
       background: url(../images/map_marker.png) 3% 48% no-repeat, #fff; }
-    .header-bottom form .quote.subscribebutton {
+      @media (max-width: 680px) {
+        .header-bottom form.first .subscribemail {
+          width: 350px; } }
+  @media (max-width: 680px) and (max-width: 550px) {
+    .header-bottom form.first .subscribemail {
+      width: 300px; } }
+    .header-bottom form.first .quote.subscribebutton {
       height: 55px;
       float: left;
       padding: 19px 70px;
+      color: #fff;
+      background: #aa8c67;
+      display: block;
+      border: none;
+      cursor: pointer;
+      margin: 0px;
+      -webkit-border-radius: 0px 7px 7px 0px;
+              border-radius: 0px 7px 7px 0px; }
+      @media (max-width: 680px) {
+        .header-bottom form.first .quote.subscribebutton {
+          padding: 19px 50px; } }
+  @media (max-width: 680px) and (max-width: 550px) {
+    .header-bottom form.first .quote.subscribebutton {
+      padding: 19px 40px; } }
+  .header-bottom form.second {
+    display: none;
+    margin-top: 25px; }
+    @media (max-width: 500px) {
+      .header-bottom form.second {
+        display: block; } }
+    .header-bottom form.second .subscribemail {
+      width: 220px;
+      height: 55px;
+      padding: 0 0 0 40px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      color: #a5a5a5;
+      font-size: 15px;
+      float: left;
+      -webkit-border-radius: 7px 0px 0px 7px;
+              border-radius: 7px 0px 0px 7px;
+      border: none;
+      background: url(../images/map_marker.png) 3% 48% no-repeat, #fff; }
+    .header-bottom form.second .quote.subscribebutton {
+      font-size: 20px;
+      height: 55px;
+      float: left;
+      padding: 0px 20px;
       color: #fff;
       background: #aa8c67;
       display: block;
@@ -313,15 +382,37 @@ header .container .header-content .header-top {
   margin-top: 74px;
   padding-bottom: 96px;
   background: #fff; }
+  @media (max-width: 450px) {
+    .advantages {
+      margin-top: 74px;
+      padding-bottom: 0px; } }
   .advantages .container .block {
     margin-top: 122px; }
+    @media (max-width: 450px) {
+      .advantages .container .block {
+        margin-top: 46px; } }
     .advantages .container .block article {
       text-align: center;
       float: left;
       width: 33.33%; }
+      @media (max-width: 450px) {
+        .advantages .container .block article {
+          width: 100%;
+          padding: 0 30px 0 20px;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box; } }
       .advantages .container .block article img {
         max-width: 60px;
         margin-bottom: 57px; }
+        @media (max-width: 450px) {
+          .advantages .container .block article img {
+            float: left;
+            width: 25%; } }
+      @media (max-width: 450px) {
+        .advantages .container .block article .right {
+          float: right;
+          text-align: left;
+          width: 75%; } }
       .advantages .container .block article .right p {
         color: #888;
         font-size: 15px; }
@@ -330,8 +421,14 @@ header .container .header-content .header-top {
 .plan {
   padding: 65px 0 96px 0;
   background: #f5f5f5; }
+  @media (max-width: 450px) {
+    .plan {
+      padding: 40px 0 50px 0; } }
   .plan .container .block {
     margin-top: 56px; }
+    @media (max-width: 450px) {
+      .plan .container .block {
+        margin-top: 35px; } }
     .plan .container .block article {
       text-align: center;
       float: left;
@@ -341,30 +438,49 @@ header .container .header-content .header-top {
               border-radius: 7px;
       margin-right: 2.5%;
       padding: 47px 0 38px 0; }
+      @media (max-width: 450px) {
+        .plan .container .block article {
+          width: 95%;
+          padding: 20px 25px 25px 20px;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          margin: 2.5% 0px 2.5% 5px; } }
       .plan .container .block article img {
         max-width: 70px;
         margin-bottom: 20px; }
+        @media (max-width: 450px) {
+          .plan .container .block article img {
+            float: left;
+            width: 35%; } }
+      @media (max-width: 450px) {
+        .plan .container .block article .right {
+          float: right;
+          text-align: left;
+          width: 65%; } }
       .plan .container .block article .right p {
         color: #888;
         font-size: 15px;
         line-height: 1.3; }
     .plan .container .block article:last-child {
       margin-right: 0%; }
-
-.subscribebutton {
-  margin: 64px auto 0;
-  padding: 21px 67px;
-  -webkit-border-radius: 7px;
-          border-radius: 7px;
-  color: #fff;
-  background: #7dac3f;
-  display: block;
-  border: none;
-  font-size: 15px;
-  cursor: pointer; }
-  @media (max-width: 770px) {
-    .subscribebutton {
-      padding: 17px 45px; } }
+  .plan .container .subscribebutton {
+    margin: 64px auto 0;
+    padding: 21px 67px;
+    -webkit-border-radius: 7px;
+            border-radius: 7px;
+    color: #fff;
+    background: #7dac3f;
+    display: block;
+    border: none;
+    font-size: 15px;
+    cursor: pointer; }
+    @media (max-width: 770px) {
+      .plan .container .subscribebutton {
+        padding: 17px 45px; } }
+  @media (max-width: 770px) and (max-width: 450px) {
+    .plan .container .subscribebutton {
+      margin-top: 20px;
+      width: 90%; } }
 
 /*reviews*/
 .reviews {
@@ -385,7 +501,7 @@ header .container .header-content .header-top {
 
 .multiple-slide .slick-dots {
   bottom: -76px; }
-  .multiple-slide .slick-dots .slick-dots li button:before {
+  .multiple-slide .slick-dots li button:before {
     font-size: 40px; }
 
 /*articles*/
@@ -393,8 +509,20 @@ header .container .header-content .header-top {
   background: #f5f5f5;
   margin-top: 106px;
   padding: 71px 0px 107px 0px; }
+  @media (max-width: 450px) {
+    .articles {
+      padding: 30px 0px 10px 0px; } }
+  .articles .container .slick-slider1 {
+    display: none; }
+    @media (max-width: 450px) {
+      .articles .container .slick-slider1 {
+        display: block;
+        margin-top: 20px; } }
   .articles .container .block {
     margin-top: 53px; }
+    @media (max-width: 450px) {
+      .articles .container .block {
+        display: none; } }
     .articles .container .block article {
       float: left;
       width: 31.65%;
@@ -432,23 +560,36 @@ header .container .header-content .header-top {
 footer {
   background: #323232;
   padding: 45px 0 49px 0; }
+  @media (max-width: 450px) {
+    footer {
+      padding: 20px 0 20px 0; } }
   footer .container .left {
     width: 25.7%;
     float: left; }
     @media (max-width: 770px) {
       footer .container .left {
         width: 33%; } }
+  @media (max-width: 770px) and (max-width: 450px) {
+    footer .container .left {
+      width: 100%;
+      text-align: center; } }
     footer .container .left p {
       font-family: 'Encode Sans', sans-serif;
       margin-top: 16px;
       color: #5b5b5b;
       font-size: 13px; }
+      @media (max-width: 450px) {
+        footer .container .left p {
+          margin-top: 5px; } }
   footer .container .right {
     width: 74.3%;
     float: right; }
     @media (max-width: 770px) {
       footer .container .right {
         width: 67%; } }
+  @media (max-width: 770px) and (max-width: 450px) {
+    footer .container .right {
+      display: none; } }
     footer .container .right article {
       float: left; }
       footer .container .right article a {
