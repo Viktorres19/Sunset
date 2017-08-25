@@ -74,7 +74,18 @@ $('.multiple-slide').slick({
   dots: true,
   slidesToShow: 3,
   //количество слайдов, которые выводятся на экране
-  slidesToScroll: 3
+  slidesToScroll: 3,
   //количество слайдов, которые перелистываются за один раз
+responsive: [
+    {
+      breakpoint: 771,
+//сообщает, при какой ширине экрана нужно включать настройки
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true
+      }
+    }
+]
 });
 });

@@ -131,42 +131,114 @@ h6
 
 //header
 
+.hidden-button svg g
+  fill: #ffffff
+  cursor: pointer
+
+.hidden-button svg g:hover
+  fill: #aa8c67
+
 header .container .header-content .header-top 
   padding: 30px 0 28px 0
-  display: flex
-  align-items: center
-  flex-direction: row
-  justify-content: space-between
   border-bottom: 1px solid rgba(255, 255, 255, .2)
+  @media (max-width:900px)
+    padding-left: 60px  
 
-  .logo
-    margin-top: -8px
+  .header-top-left
+    float: left
+    display: none
+    @media (max-width:900px)
+      display: block
+      width: 5%
 
-    a
-      font-family: 'Encode Sans', sans-serif  
-      color: #fff
-      font-size: 30px
-      text-decoration: none  
+    .hidden-container
+      position: relative
+      margin-top: 10px
 
-  nav
-    margin-left: 0%
-    width: 60%
-    margin-right: -35%
+      .hidden-menu
+        display: none  
+        position: absolute  
+        width: 250px
+        background: #323232
+        box-sizing: border-box
+        padding: 20px 25px
+        border: 1px solid #3c3c3c
 
-    ul li
+        ul li 
+          margin-bottom: 20px        
+
+          a
+            color: #717171
+
+          a:hover
+            color: #fefefe  
+
+        ul li:last-child
+          margin-bottom: 0px                      
+
+
+  .header-top-right
+    float: left
+    width: 100%
+    @media (max-width:900px)
+      width: 95%
+
+    .logo
+      margin-top: 2px
       float: left
-      margin-right: 5%
+      width: 15%
+      @media (max-width:1050px)
+        margin-left: 10px
+        @media (max-width:1000px)
+          margin-left: 70px        
+          @media (max-width:900px)
+            width: 25%
+            margin-left: 3px
 
       a
-        color: #fff   
+        font-family: 'Encode Sans', sans-serif  
+        color: #fff
+        font-size: 30px
+        text-decoration: none
+        float:left        
 
-      a:hover
-        color: #aa8c67
+    nav
+      margin-top: 15px
+      float: left
+      width: 69%
+      box-sizing: border-box
+      padding-left: 21%      
+      @media (max-width:1100px)
+        padding-left: 10%
+        width: 50%
+        @media (max-width:900px)
+          display: none
 
-  .hb.subscribebutton
-    margin: 0px
-    padding: 18px 29px
-    font-size: 14px
+      ul li
+        float: left
+        margin-right: 6.8%
+        @media (max-width:1100px)
+          margin-right: 3%
+
+        a
+          color: #fff 
+          @media (max-width:1100px)
+            font-size: 12px
+
+        a:hover
+          color: #aa8c67
+
+      ul li:last-child
+        margin-right: 0%
+
+    .hb.subscribebutton
+      margin: 0px
+      padding: 18px 29px
+      font-size: 14px
+      float: right
+      @media (max-width:1000px)
+        margin-right: 70px
+
 //header-bottom
 .header-bottom
   display: flex
@@ -176,6 +248,8 @@ header .container .header-content .header-top
 
   h1
     margin-top: 100px
+    @media (max-width:1300px)
+      margin-top: 90px
 
   p
     margin-top: 25px
@@ -185,6 +259,8 @@ header .container .header-content .header-top
 
   form
     margin-top: 60px
+    @media (max-width:1300px)
+      margin-top: 50px
 
     .subscribemail 
       width: 437px
@@ -195,24 +271,26 @@ header .container .header-content .header-top
       color: #a5a5a5
       font-size: 15px
       float: left
-      border-radius: 10px 0px 0px 10px
+      border-radius: 7px 0px 0px 7px
       border: none
       background: url(../images/map_marker.png) 3% 48% no-repeat, #fff
 
     .quote.subscribebutton
       height: 55px
       float: left
-      padding: 19px 60px
+      padding: 19px 70px
       color: #fff
       background: #aa8c67
       display: block
       border: none
       cursor: pointer
       margin: 0px
-      border-radius: 0px 10px 10px 0px
+      border-radius: 0px 7px 7px 0px
 
   .top-button
     margin-top: 80px
+    @media (max-width:1300px)
+      margin-top: 70px
 
     a
       display: block
@@ -342,6 +420,10 @@ header .container .header-content .header-top
         width: 31.65%
         margin-right: 2.5%
         color: #000
+        @media (max-width:770px)
+          width: 44.8%
+          margin-right: 3.46%
+
 
         img
           border-radius: 7px
@@ -358,6 +440,17 @@ header .container .header-content .header-top
       article:last-child
         margin-right: 0%
 
+      article:first-child
+        margin-left: 0% 
+        @media (max-width:770px)
+          margin-left: 3.46%       
+
+.articles-hide
+  background: #f5f5f5
+  @media (max-width:770px) 
+    display: none
+
+
 /*styles for footer*/
 footer
   background: #323232
@@ -368,6 +461,8 @@ footer
     .left
       width: 25.7%
       float: left
+      @media (max-width:770px)
+        width: 33%
 
       p
         font-family: 'Encode Sans', sans-serif
@@ -378,6 +473,8 @@ footer
     .right
       width: 74.3%
       float: right
+      @media (max-width:770px)
+        width: 67%      
 
       article
         float: left
