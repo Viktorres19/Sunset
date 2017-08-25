@@ -59,11 +59,17 @@ gulp.task('img', function() {
         .pipe(gulp.dest('dist/images')); // Выгружаем на продакшен
 });
 
-gulp.task('build', ['clean', 'sass', 'img', 'scripts'], function() {
+gulp.task('video', function() {
+    return gulp.src('app/video/**/*')
+        .pipe(gulp.dest('dist/video'));
+});
+
+gulp.task('build', ['clean', 'sass', 'img', 'video', 'scripts'], function() {
 
     var buildCss = gulp.src([ // Переносим CSS стили в продакшен
         'app/css/main.css',
-        'app/css/jquery.bxslider.min.css'
+        'app/css/slick.css',
+        'app/css/slick-theme.css'
         ])
     .pipe(gulp.dest('dist/css'))
 
