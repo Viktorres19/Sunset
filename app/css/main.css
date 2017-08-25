@@ -67,10 +67,16 @@ h1 {
 h2 {
   text-align: center;
   font-size: 32px; }
+  @media (max-width: 770px) {
+    h2 {
+      font-size: 28px; } }
 
 h3 {
   font-size: 23px;
   margin-bottom: 9px; }
+  @media (max-width: 770px) {
+    h3 {
+      font-size: 18px; } }
 
 h4 {
   font-size: 15px;
@@ -259,11 +265,11 @@ header .container .header-content .header-top {
     color: #fff;
     font-size: 17px;
     text-align: center; }
+    @media (max-width: 770px) {
+      .header-bottom p {
+        margin-top: 20px; } }
   .header-bottom form {
     margin-top: 60px; }
-    @media (max-width: 1300px) {
-      .header-bottom form {
-        margin-top: 50px; } }
     .header-bottom form .subscribemail {
       width: 437px;
       height: 55px;
@@ -356,6 +362,9 @@ header .container .header-content .header-top {
   border: none;
   font-size: 15px;
   cursor: pointer; }
+  @media (max-width: 770px) {
+    .subscribebutton {
+      padding: 17px 45px; } }
 
 /*reviews*/
 .reviews {
