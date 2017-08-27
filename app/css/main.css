@@ -244,7 +244,14 @@ header .container .header-content .header-top {
       margin: 0px;
       padding: 18px 29px;
       font-size: 14px;
-      float: right; }
+      float: right;
+      -webkit-border-radius: 7px;
+              border-radius: 7px;
+      color: #fff;
+      background: #7dac3f;
+      border: none;
+      cursor: pointer;
+      display: block; }
       @media (max-width: 1000px) {
         header .container .header-content .header-top .header-top-right .hb.subscribebutton {
           margin-right: 70px; } }
@@ -379,8 +386,7 @@ header .container .header-content .header-top {
 
 /* advantages */
 .advantages {
-  margin-top: 74px;
-  padding-bottom: 96px;
+  padding: 74px 0 96px 0;
   background: #fff; }
   @media (max-width: 450px) {
     .advantages {

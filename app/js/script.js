@@ -111,3 +111,9 @@ $('.slick-slider1').slick({
   //количество слайдов, которые перелистываются за один раз
 });
 });
+
+
+
+$('div.hidden-button').click(function(){
+    $('.hidden-menu').toggle();
+});
